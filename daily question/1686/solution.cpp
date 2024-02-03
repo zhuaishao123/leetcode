@@ -3,7 +3,7 @@ using namespace std;
 
 class Solution {
 public:
-    int stoneGameVI(vector<int>& aliceValues, vector<int>& bobValues) {
+    int stoneGameVI (vector<int>& aliceValues, vector<int>& bobValues) {
         int n = aliceValues.size();
         function<bool(tuple<int,int> a,tuple<int,int> b)> comp = [](tuple<int,int> a,tuple<int,int> b){
             return get<0>(a) < get<0>(b);
@@ -29,3 +29,4 @@ public:
         return 0;
     }
 };
+
